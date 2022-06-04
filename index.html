@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-
+  
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <!-- Fonts from google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="styles.css">
+  
   <title>Frontend Mentor | Interactive comments section</title>
-
+  
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -24,17 +25,49 @@
   <div id="firstComment" class="comment">
     <button class="replyBtn"><img class="replyImg" src="./images/icon-reply.svg"> Reply</button>
     <div class="commentDetails">
-      <img class="commentAvatar" src="images/avatars/image-amyrobson.png">
+      <img class="commentPic" src="images/avatars/image-amyrobson.png">
       <span class="username">amyrobson</span>
       <span class="Longago">1 month ago</span>
     </div>
     <p>Impressive! Though it seems the drag feature could be imporved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
   </div>
   
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Badra Mohamed</a>.
+  <div id="SecondComment" class="comment">
+    <button class="replyBtn"><img class="replyImg" src="./images/icon-reply.svg"> Reply</button>
+    <div class="commentDetails">
+      <img class="commentPic" src="images/avatars/image-maxblagun.png">
+      <span class="username">maxblagun</span>
+      <span class="Longago">2 weeks ago</span>
+    </div>
+    <p>Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</p>
   </div>
-</body>
-</html>
+
+  <div id="commentreply1" class="reply">
+    <button class="replyBtn">
+      <img class="replyImg" src="./images/icon-reply.svg"> Reply</button>
+      <div class="commentDetails">
+        <img class="commentPic" src="images/avatars/image-ramsesmiron.png">
+        <span class="username">ramsesmiron</span>
+        <span class="Longago">1 week ago</span>
+      </div>
+      <p><span class="replyperson">@maxblagun</span> If you're still new. I'd recommend focusing on the fundamentals of HTML, CSS and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</p>
+    </div>
+
+    <div id="commentreply2" class="reply">
+      <div class="commentDetails">
+        <img class="commentPic" src="images/avatars/image-juliusomo.png">
+        <span class="username">juliusomo</span>
+        <span class="you">you</span>
+        <span class="Longago">2 days ago</span>
+      </div>
+
+    <p><span class="replyperson">@ramsesmiron</span> I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</p>
+    </div>
+
+    <div id="addComments" class="comment"></div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Badra Mohamed</a>.
+    </div>
+  </body>
+  </html>
